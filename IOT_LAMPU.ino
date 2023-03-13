@@ -6,7 +6,7 @@ void setup() {
   Serial.begin(115200);
   pinMode(relay,OUTPUT);
   digitalWrite(relay,HIGH);
-  robot.wifiConnect("David", "dv290701");
+  robot.wifiConnect("WifiName", "WifiPassword");
   robot.setTelegramToken("2055046520:AAFgX9bGC2JEuDuSem4AL0nnYhINN4Taz0o");
   if(robot.testConnection())
   Serial.println("Terhubung!");
